@@ -1,7 +1,7 @@
 %global sum     Simple client library for interacting with OpenStack clouds
 
 Name:           shade
-Version:        1.13.2
+Version:        1.20.0
 Release:        1%{?dist}
 Summary:        %{sum}
 
@@ -45,15 +45,8 @@ Requires:       python-dogpile-cache
 
 Requires:       python-novaclient
 Requires:       python-keystoneclient
-Requires:       python-glanceclient
-Requires:       python-cinderclient
-Requires:       python-neutronclient
-Requires:       python-troveclient
 Requires:       python-ironicclient
-Requires:       python-swiftclient
-Requires:       python-heatclient
 Requires:       python-designateclient
-Requires:       python-magnumclient
 
 
 %description -n python2-shade
@@ -82,5 +75,8 @@ PBR_VERSION=%{version} %{__python2} setup.py install --skip-build --root %{build
 
 
 %changelog
+* Wed May 31 2017 David Moreau Simard <dmsimard@redhat.com> - 1.20.0-1
+- Update to upstream 1.20.0
+
 * Tue Mar 14 2017 Tristan Cacqueray <tdecacqu@redhat.com> - 1.13.2-1
 - Initial packaging
