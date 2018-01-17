@@ -1,7 +1,7 @@
 %global sum     Simple client library for interacting with OpenStack clouds
 
 Name:           shade
-Version:        1.22.2
+Version:        1.26.0
 Release:        1%{?dist}
 Summary:        %{sum}
 
@@ -37,15 +37,12 @@ Requires:       python2-jmespath
 Requires:       python2-jsonpatch
 Requires:       python-ipaddress
 Requires:       python2-os-client-config
-Requires:       python2-babel
 Requires:       python2-requestsexceptions
 Requires:       python-six
 Requires:       python-futures
 Requires:       python2-iso8601
 Requires:       python2-keystoneauth1
 Requires:       python-netifaces
-Requires:       python-keystoneclient
-Requires:       python-ironicclient
 Requires:       python-dogpile-cache
 
 %description -n python2-shade
@@ -76,6 +73,9 @@ PBR_VERSION=%{version} %{__python2} setup.py install --skip-build --root %{build
 
 
 %changelog
+* Wed Jan 17 2018 Fabien Boucher <fboucher@redhat.com> - 1.26.0-1
+- Bump to 1.26.0
+
 * Tue Jun 27 2017 Tristan Cacqueray <tdecacqu@redhat.com> - 1.22.2-1
 - Bump to 1.22.2
 
